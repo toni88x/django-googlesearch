@@ -1,9 +1,8 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 from django.views.generic.base import TemplateView
 
 
-urlpatterns = patterns(
-    '',
+urlpatterns = [
 
     url(
         r'^results/$',
@@ -17,4 +16,4 @@ urlpatterns = patterns(
         {},
         name='googlesearch-cref-cse'
     ),
-)
+]
